@@ -52,3 +52,22 @@ plt.title("Cosine Wave")
 plt.legend()
 plt.grid(True)
 plt.show()
+
+
+from utils import add_unit_step
+
+# Create a time vector
+t = np.linspace(-5, 5, 500)
+
+
+sin_signal = np.sin(t)
+
+# Add the unit step
+result = add_unit_step(sin_signal, t, step_time=0)
+
+# Plot the result
+plt.plot(t, sin_signal, label="Original Sinusoid")
+plt.plot(t, result, label="Sinusoid + Unit Step", linestyle='--')
+plt.legend()
+plt.grid(True)
+plt.show()
