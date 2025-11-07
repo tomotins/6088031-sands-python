@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "systems-and-signals-with-python"
+version = "1.0.0"
+description = "Generating signals, plotting and modifying them"
+authors = [
+    { name = "Tom Doran", email = "tdoran@tudelft.nl" }
+]
+dependencies = [
+    "numpy",
+    "matplotlib"
+]
