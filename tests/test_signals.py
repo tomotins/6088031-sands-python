@@ -1,8 +1,7 @@
 # imports and stuff
 import numpy as np
-from signal_and_signalchange import sine_wave, cosine_wave
-from utils import add_unit_step  # not really using this rn but whatever
-
+from systems_and_signals_with_python.signal_and_signalchange import sine_wave, cosine_wave
+from systems_and_signals_with_python.utils import add_unit_step
 
 # testing sine wave
 def test_sine_wave():
